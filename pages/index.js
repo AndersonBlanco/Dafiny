@@ -17,7 +17,7 @@ function Header(){
       <h1 
       style = {{
         fontSize: "7vh",
-      }}> Vote for Dafiny </h1>
+      }}> Vote for Dafne </h1>
 
     </div>
 
