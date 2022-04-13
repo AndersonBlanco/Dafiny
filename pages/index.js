@@ -29,13 +29,14 @@ function Header(){
       paddingRight: "0vh",
       backgroundColor: "white",
       alignSelf: "top",
-      display: "inline-flex"
+      display: "inline-flex",
+   
 
     }}>
       <h1 
       style = {{
         fontSize: "200%",
-       
+        marginRight: "5.5%"
      
       }}> Vote for Dafne </h1>
 
@@ -48,11 +49,13 @@ style = {{
   width: "fit-content",
   height: "fit-content",
   paddingTop: "0vh",
-  width: "73%",
-  backgroundColor: "transparent",
+  paddingLeft: "10%",
+  width: "40%",
+  backgroundColor: "grey",
   alignItems: "center",
-  justifyContent: "center",
+  justifyContent: "ceter",
   textAlign: "right",
+  
 
 
 
@@ -69,7 +72,8 @@ style = {{
 
        style = {{
          marginTop: "2.5vh", 
-       
+         marginBottom: "-11%",
+         marginRight: "-11%"
        }}
        />
        </div>
