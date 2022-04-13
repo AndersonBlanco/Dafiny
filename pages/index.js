@@ -96,7 +96,7 @@ function Content(){
      
 <div style = {{ display: "inline", textAlign: "left", alignItems: "center", justifyContent: "center"}}>
    <div style = {{float: "left", padding: "1%"}}><Image src = {dafne_profile} quality = {100} height = {"200%"} width = {"280%"} placeholder = {"blur"} /> </div>
-       <p style = {{fontSize: "3.4vh", margin: "3.4vh", display: "inline", fontFamily: "unset" }}> <b>“I believe in change, diversity, and giving you a voice. <br/> All my life I have seen people build their lives from the ground up and I would love to contribute to that. <br/> Being state officer for Skills USA will help me inspire others in my community today and in the future. <br/> My message being if I can do it, so can they! When you need gudience, im willing to guide you. <br/> When you need suport of any kind, im willing to support you. <br/> I’m here to make the right decisions that will benefit you. <br/> I will give you the opportunity to speak on what effects/concerns you directly!!!”   </b> </p>
+       <p style = {{fontSize: "3.4vh", margin: "3.4vh", display: "inline", fontFamily: "unset", textALign: "left"}}> <b>“I believe in change, diversity, and giving you a voice. <br/> All my life I have seen people build their lives from the ground up and I would love to contribute to that. <br/> Being state officer for Skills USA will help me inspire others in my community today and in the future. <br/> My message being if I can do it, so can they! When you need gudience, im willing to guide you. <br/> When you need suport of any kind, im willing to support you. <br/> I’m here to make the right decisions that will benefit you. <br/> I will give you the opportunity to speak on what effects/concerns you directly!!!”   </b> </p>
     </div>
     </div>
 
@@ -113,13 +113,18 @@ const [fontSize, setFontSize] = React.useState(false);
     <div
     style = {{
       baclgroundColor: "white",
-      marginTop: "1vh"
+      marginTop: "2.5vh",
+    
     }}>
-      <h2> Whats on your mind?..</h2>
+      
+      <h2 style = {{textAlign: "left"}}> Whats on your mind?..</h2>
+    
+     <div style={{ textAlign: "center", width: "100%",
+        height: "100%", marginBottom: "-34%"}}>
       <textarea placeholder = "Share your opinion....."
      
       style = {{
-        fontSize: "250%",
+        fontSize: "200%",
         padding: "2.5vh",
         border: "none",
         outline: "none",
@@ -127,12 +132,13 @@ const [fontSize, setFontSize] = React.useState(false);
         textAlign: "top",
         alignItems: "top",
         justifyContent: "top",
-        width: "100%",
+        width: "70%",
         height: "50%"
 
       }}/>
+      </div>
 
-      <h4>Note: Your message will be sent anonymusly. Your name will not be used.</h4>
+      <h4 style = {{textAlign: "left"}}>Note: Your message will be sent anonymusly. Your name will not be used.</h4>
      
      
       <input
@@ -145,7 +151,9 @@ const [fontSize, setFontSize] = React.useState(false);
         padding: "2.5vh",
         borderRadius: "2.5vh",
         boxShadow: "inset 0vh 0vh 1vh grey",
-        cursor: "pointer"
+        cursor: "pointer",
+        textAlign: "center",
+    
       }} type = "button" value={"Send"} onClick = {() =>{ setFontSize(!fontSize) }} />
 
 
