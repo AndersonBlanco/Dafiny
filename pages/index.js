@@ -51,7 +51,7 @@ style = {{
   paddingTop: "0vh",
   paddingLeft: "10%",
   width: "40%",
-  backgroundColor: "grey",
+  backgroundColor: "transparent",
   alignItems: "bottom",
   justifyContent: "bottom",
   textAlign: "right",
