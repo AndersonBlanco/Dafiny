@@ -6,7 +6,6 @@ import insta_logo from "pages/instagram.png"
 import snap_logo from "pages/snapchat.png"
 import dafne_profile from "pages/dafne_profile.jpg";
 
-
 import React from "react"
 //import Header from '@components/Header'
 // import Footer from '@components/Footer'
@@ -24,18 +23,19 @@ function Header(){
     style = {{
       width: "100%",
       height: "fit-content",
-      padding: "2vh",
+      paddingTop: "2vh",
+      paddingBottom: "0vh",
+      paddingLeft: "1vh",
+      paddingRight: "1vh",
       backgroundColor: "white",
       alignSelf: "top",
-      display: "grid",
-      gridTemplateColumns: "auto auto auto"
+      display: "inline-flex"
 
     }}>
       <h1 
       style = {{
         fontSize: "7vh",
-        gridColumnStart: 1,
-gridColumnEnd: 1
+       
      
       }}> Vote for Dafne </h1>
 
@@ -44,29 +44,32 @@ gridColumnEnd: 1
 
 <div
 style = {{
-  backgroundColor: "white",
+
   width: "fit-content",
   height: "fit-content",
-  padding: "0vh",
-  position: "relative",
-  right: "-64%",
-  top: "-10.5%",
-  gridColumnStart: 3,
-gridColumnEnd: 3,
+  paddingTop: "0vh",
+  width: "73%",
+  backgroundColor: "transparent",
+  alignItems: "center",
+  justifyContent: "center",
+  textAlign: "right",
+
+
 
 }}>
 <Image 
       src = {skillsUSA_logo_br}
-      height = {100}
-       width = {150}
+      height = {"100vh"}
+       width = {"150vh"}
        objectFit = "contain"
        placeholder = {"blur"}
        quality = {100}
-       layout = "fixed" 
+      
        loading = {"lazy"}
 
        style = {{
-
+         marginTop: "2.5vh", 
+       
        }}
        />
        </div>
@@ -91,9 +94,9 @@ function Content(){
        
        }}>Why vote for Dafne? </h2>
      
-<div style = {{ display: "inline-flex"}}>
-   <Image style = {{float: "left"}} src = {dafne_profile} quality = {100} height = {200} width = {500} placeholder = {"blur"} />
-       <p style = {{fontSize: "3.4vh", margin: "3.4vh"}}>“I believe in change, diversity, and giving you a voice. <br/> All my life I have seen people build their lives from the ground up and I would love to contribute to that. <br/> Being state officer for Skills USA will help me inspire others in my community today and in the future. <br/> My message being if I can do it, so can they! When you need gudience, im willing to guide you. <br/> When you need suport of any kind, im willing to support you. <br/> I’m here to make the right decisions that will benefit you. <br/> I will give you the opportunity to speak on what effects/concerns you directly!!!” -Dafne   </p>
+<div style = {{ display: "inline", textAlign: "left", alignItems: "center", justifyContent: "center"}}>
+   <div style = {{float: "left", padding: "1%"}}><Image src = {dafne_profile} quality = {100} height = {"200%"} width = {"280%"} placeholder = {"blur"} /> </div>
+       <p style = {{fontSize: "3.4vh", margin: "3.4vh", display: "inline", fontFamily: "unset" }}> <b>“I believe in change, diversity, and giving you a voice. <br/> All my life I have seen people build their lives from the ground up and I would love to contribute to that. <br/> Being state officer for Skills USA will help me inspire others in my community today and in the future. <br/> My message being if I can do it, so can they! When you need gudience, im willing to guide you. <br/> When you need suport of any kind, im willing to support you. <br/> I’m here to make the right decisions that will benefit you. <br/> I will give you the opportunity to speak on what effects/concerns you directly!!!”   </b> </p>
     </div>
     </div>
 
@@ -113,10 +116,10 @@ const [fontSize, setFontSize] = React.useState(false);
       marginTop: "1vh"
     }}>
       <h2> Whats on your mind?..</h2>
-      <textarea placeholder = "Type here....."
+      <textarea placeholder = "Share your opinion....."
      
       style = {{
-        fontSize: "5vh",
+        fontSize: "250%",
         padding: "2.5vh",
         border: "none",
         outline: "none",
@@ -124,8 +127,8 @@ const [fontSize, setFontSize] = React.useState(false);
         textAlign: "top",
         alignItems: "top",
         justifyContent: "top",
-        height: "70%",
-        width: "100vh"
+        width: "100%",
+        height: "50%"
 
       }}/>
 
@@ -148,7 +151,7 @@ const [fontSize, setFontSize] = React.useState(false);
 
     <div
     style = {{
-    marginBottom: "5vh",
+    marginBottom: "1vh",
     marginTop: "5vh"
 
     }}>
@@ -162,6 +165,40 @@ const [fontSize, setFontSize] = React.useState(false);
 <br/>
 <br/>
       </div>
+
+      <div
+style = {{
+
+  width: "fit-content",
+  height: "fit-content",
+  paddingTop: "0vh",
+  width: "100%",
+  backgroundColor: "transparent",
+  alignItems: "center",
+  justifyContent: "center",
+  textAlign: "center",
+
+
+
+}}>
+<Image 
+      src = {skillsUSA_logo_br}
+      height = {"100vh"}
+       width = {"150vh"}
+       objectFit = "contain"
+       placeholder = {"blur"}
+       quality = {100}
+      
+       loading = {"lazy"}
+
+       style = {{
+         marginTop: "2.5vh", 
+       
+       }}
+       />
+       </div>
+
+
       </div>
   )
 }
@@ -212,9 +249,12 @@ function Foot(){
   )
 }
 export default function Home() {
+
+
   return (
-    <div className="container">
-    <Header/>
+    <div className = "container" >
+   <Header />
+
     <Content />
     <QA />
   
