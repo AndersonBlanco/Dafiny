@@ -26,7 +26,7 @@ function Header(){
       paddingTop: "2vh",
       paddingBottom: "0vh",
       paddingLeft: "1vh",
-      paddingRight: "1vh",
+      paddingRight: "0vh",
       backgroundColor: "white",
       alignSelf: "top",
       display: "inline-flex"
@@ -34,7 +34,7 @@ function Header(){
     }}>
       <h1 
       style = {{
-        fontSize: "7vh",
+        fontSize: "200%",
        
      
       }}> Vote for Dafne </h1>
