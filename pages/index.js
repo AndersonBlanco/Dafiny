@@ -54,7 +54,7 @@ style = {{
   backgroundColor: "transparent",
   alignItems: "bottom",
   justifyContent: "bottom",
-  textAlign: "right",
+  textAlign: "bottom",
   
 
 
