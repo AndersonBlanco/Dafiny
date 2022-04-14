@@ -99,7 +99,7 @@ function Content(){
        }}>Why vote for Dafne? </h2>
      
 <div style = {{ display: "inline", textAlign: "left", alignItems: "center", justifyContent: "center"}}>
-   <div style = {{float: "left", padding: "1%"}}><Image src = {dafne_profile} quality = {100} height = {"200%"} width = {"280%"} placeholder = {"blur"} /> </div>
+   <div style = {{float: "left", padding: "1%"}}><Image src = {dafne_profile} quality = {100} height = {"200%"} width = {"287%"} placeholder = {"blur"} /> </div>
        <p style = {{fontSize: "3.4vh", margin: "3.4vh", display: "inline", fontFamily: "unset", textALign: "left"}}><br/> <b>“I believe in change, diversity, and giving you a voice. <br/> All my life I have seen people build their lives from the ground up and I would love to contribute to that. <br/> Being state officer for Skills USA will help me inspire others in my community today and in the future. <br/> My message being if I can do it, so can they! When you need gudience, im willing to guide you. <br/> When you need suport of any kind, im willing to support you. <br/> I’m here to make the right decisions that will benefit you. <br/> I will give you the opportunity to speak on what effects/concerns you directly!!!”   </b> </p>
     </div>
     </div>
